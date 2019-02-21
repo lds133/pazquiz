@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+  
+    <title>Admin</title>
+	<meta http-equiv="refresh" content="30">
+    <meta charset="utf-8">
+  </head>
+  <body>
+
+    <p>
+    <a href = "{{ url_for('home') }}">Інформація</a> &nbsp;&nbsp;&nbsp;&nbsp; 
+    <a href = "{{ url_for('new') }}">Розпочати тестування</a> &nbsp;&nbsp;&nbsp;&nbsp; 
+    <a href = "https://sites.google.com/site/itmpaz2011/">Сайт курсу ПАЗ</a>
+    </p>  
+  
+<h1>Admin</h1>
+
+{% for a,v in QuizCFG.__dict__.items() %}
+   {% if not a.startswith('_') %}
+    {{ a }} = {{ v }}<br>
+   {% endif %} 
+{% endfor %}
+
+<p></p>
+
+<p>{{ report|safe }}</p>
+
+    
+  </body>
+</html>

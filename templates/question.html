@@ -1,0 +1,73 @@
+{% extends "layout.html" %}
+{% block content %}
+<h1>Питання {{ quizsession.quiz.Position() }} з {{ quizsession.quiz.TotalAnswersCount() }} </h1>
+<small class="text-muted ml-2">
+{% if quizsession.MinsLeft()<=0 %}
+Час вичерпаний
+{% elif quizsession.MinsLeft()==1 %}
+Залишилоcь меньше хвилини
+{% else %}
+Залишилось {{  quizsession.MinsLeft() }} хвилин
+{% endif %}
+</small>
+<p></p>
+
+<h6>{{ quizsession.quiz.Question().text }}</h6>
+    
+    {% if quizsession.quiz.Question().code != None %}
+    <article class="media content-section"><pre><code>{{ quizsession.ToHTML( quizsession.quiz.Question().code )|safe }}</code></pre></article>
+    {% endif %}
+    
+
+
+{% if quizsession.quiz.Question().img != None  %}
+    <img   src="{{ url_for('static', filename= quizsession.quiz.Question().img ) }}"  class="img-fluid"   </img>
+{% endif %}
+    
+
+
+<p></p>
+
+<div class="form-group">
+
+	<form method="POST" action="">
+
+        {{ form.hidden_tag() }}
+
+        {% for field in form %}
+            {% if field.type == "MyBooleanField" %}
+            <div class="form-check">
+                {{ field(class="form-check-input") }} 
+                <label class="form-check-label" for="{{ field.id }}">
+                {{ quizsession.ToHTML( field.label.text )|safe }}
+                </label>
+            </div>
+            {% endif %}
+        {% endfor %}  
+        
+
+        <p></p>
+
+        {{ form.submit(class="btn btn-outline-info") }}
+
+    </form>
+</div>
+
+
+
+
+<!--
+<article class="media content-section">
+  <div class="media-body">
+    <div class="article-metadata">
+      <a class="mr-2" href="#"> post.author </a>
+      <small class="text-muted"> post.date_posted </small>
+    </div>
+    <h2><a class="article-title" href="#"> post.title </a></h2>
+    <p class="article-content"> post.content </p>
+  </div>
+</article>
+-->
+
+
+{% endblock content%}

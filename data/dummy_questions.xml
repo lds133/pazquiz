@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="windows-1251"?>
+<quiz xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" version="0.0.0" date="21.02.2019 22:52:00">
+  <questions>
+  
+  
+  
+  
+  
+  
+  
+     <q group="a">
+      <text>Question 1, group A</text>
+      <img>pic_001.png</img>
+      <responces>
+        <r isright="false"><text>Wrong</text></r>
+        <r isright="false"><text>Wrong</text></r>
+        <r isright="false"><text>Wrong</text></r>
+        <r isright="true"><text>Right</text></r>
+      </responces>
+    </q>    
+	
+    
+     <q group="a">
+      <text>Question 2, group A</text>
+      <img>pic_001.png</img>
+      <responces>
+        <r isright="false"><text>Wrong</text></r>
+        <r isright="false"><text>Wrong</text></r>
+        <r isright="false"><text>Wrong</text></r>
+        <r isright="true"><text>Right</text></r>
+      </responces>
+    </q>  
+  
+  
+     <q group="a">
+      <text>Question 3, group A</text>
+      <img>pic_001.png</img>
+      <responces>
+        <r isright="false"><text>Wrong</text></r>
+        <r isright="false"><text>Wrong</text></r>
+        <r isright="false"><text>Wrong</text></r>
+        <r isright="true"><text>Right</text></r>
+      </responces>
+    </q>    
+  
+  
+     <q group="a">
+      <text>Question 4, group A</text>
+      <responces>
+        <r isright="false"><text>Wrong</text></r>
+        <r isright="false"><text>Wrong</text></r>
+        <r isright="false"><text>Wrong</text></r>
+        <r isright="true"><text>Right</text></r>
+      </responces>
+    </q>  
+  
+  
+     <q group="a">
+      <text>Question 5, group A</text>
+      <responces>
+        <r isright="false"><text>Wrong</text></r>
+        <r isright="false"><text>Wrong</text></r>
+        <r isright="false"><text>Wrong</text></r>
+        <r isright="true"><text>Right</text></r>
+      </responces>
+    </q>  
+    
+    
+    
+     <q group="a">
+      <text>Question 6, group A</text>
+      <responces>
+        <r isright="false"><text>Wrong</text></r>
+        <r isright="false"><text>Wrong</text></r>
+        <r isright="false"><text>Wrong</text></r>
+        <r isright="true"><text>Right</text></r>
+      </responces>
+    </q>      
+    
+    
+     <q group="b">
+      <text>Question 7, group B</text>
+<code>
+int main()
+{
+    return 0;
+}
+</code>      
+      <responces>
+        <r isright="false"><text>Wrong</text></r>
+        <r isright="false"><text>Wrong</text></r>
+        <r isright="false"><text>Wrong</text></r>
+        <r isright="true"><text>Right</text></r>
+      </responces>
+    </q>      
+    
+    
+     <q group="b">
+      <text>Question 8, group B</text>
+<code>
+int main()
+{
+    return 0;
+}
+</code>      
+      <responces>
+        <r isright="false"><text>Wrong</text></r>
+        <r isright="false"><text>Wrong</text></r>
+        <r isright="false"><text>Wrong</text></r>
+        <r isright="true"><text>Right</text></r>
+      </responces>
+    </q> 
+
+
+    
+     <q group="b">
+      <text>Question 9, group B</text>
+<code>
+int main()
+{
+    return 0;
+}
+</code>      
+      <responces>
+        <r isright="false"><text>Wrong</text></r>
+        <r isright="false"><text>Wrong</text></r>
+        <r isright="false"><text>Wrong</text></r>
+        <r isright="true"><text>Right</text></r>
+      </responces>
+    </q> 
+
+    
+    
+     <q group="b">
+      <text>Question 10, group B</text>
+      <responces>
+        <r isright="false"><text>Wrong</text></r>
+        <r isright="false"><text>Wrong</text></r>
+        <r isright="false"><text>Wrong</text></r>
+        <r isright="true"><text>Right</text></r>
+      </responces>
+    </q> 
+  
+  
+     <q group="b">
+      <text>Question 11, group B</text>
+      <responces>
+        <r isright="false"><text>Wrong</text></r>
+        <r isright="false"><text>Wrong</text></r>
+        <r isright="false"><text>Wrong</text></r>
+        <r isright="true"><text>Right</text></r>
+      </responces>
+    </q> 
+
+
+     <q group="b">
+      <text>Question 12, group B</text>
+      <responces>
+        <r isright="false"><text>Wrong</text></r>
+        <r isright="false"><text>Wrong</text></r>
+        <r isright="false"><text>Wrong</text></r>
+        <r isright="true"><text>Right</text></r>
+      </responces>
+    </q>     
+  
+  </questions>
+</quiz>
+  
+    

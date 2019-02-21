@@ -1,0 +1,24 @@
+{% extends "layout.html" %}
+{% block content %}
+
+{% if errcode == 100 %}
+<h1>Сервер перегружений. Спробуйте зайти пізніше.</h1>
+
+{% elif errcode == 101 %}
+<h1>Невірний індекс процесу тестування.</h1>
+
+
+{% elif errcode == 102 %}
+<h1>При тесуванні виникла помилка</h1>
+<h1>{{ quizsession.quiz.state }}</h1>
+
+{% endif%}
+
+<!--
+{% if errortext %}
+[{{ errortext }}]
+{% endif%} 
+-->
+
+
+{% endblock content%}

@@ -1,0 +1,18 @@
+{% extends "layout.html" %}
+{% block content %}
+
+<h1>Питання для перевірки знань з дісципліни ПАЗ</h1>
+<p></p>
+<article class="media content-section">
+<div class="media-body">
+<p>Вам буде запропоновано для відповіді  {{ quizdb.GetCFG("QUESTIONSCOUNT") }} питань типу "множинний вибір"</p>
+<p>На тестування відведено {{ quizdb.GetCFG("SESSIONTIMEMINS") }} хвилин</p>
+</div>
+</article>
+<p></p>
+<a class="btn btn-outline-info" href="\n" role="button">Розпочати тестування</a>
+
+
+
+
+{% endblock content%}

@@ -1,0 +1,17 @@
+pip3 install flask gunicorn
+
+
+
+gunicorn --bind 0.0.0.0:5000 wsgi:app 
+
+gunicorn --bind 0.0.0.0:5000 wsgi:app  --daemon
+
+one worker only!!!!
+
+gunicorn --bind 0.0.0.0:5000 wsgi:app  -n PAZWEB --daemon
+
+
+pkill gunicorn
+
+
+gunicorn grand56.wsgi:application --name grand56 --workers 3 --user=root --group=root --bind=127.0.0.1:1001 --daemon

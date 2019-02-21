@@ -1,0 +1,23 @@
+{% extends "layout.html" %}
+{% block content %}
+
+<h1>Тестування завершено</h1>
+
+<small class="text-muted ml-2">
+Витрачено {{  quizsession.AgeInMins()  }} хвилин
+</small>
+<p></p>
+
+<article class="media content-section">
+<div class="media-body">
+<p>Всього питань {{ quizsession.quiz.TotalAnswersCount() }}</p>
+<p>Вірних відповідей {{ quizsession.quiz.RightAnswersCount() }}</p>
+<p class="text-secondary">Протокол тестування № {{ quizsession.sid }} збережено</p>
+
+</div>
+</article>
+<p>
+<a class="btn btn-outline-info" href="{{ url_for('new') }}" role="button">Розпочати тестування</a>
+</p>
+
+{% endblock content%}
